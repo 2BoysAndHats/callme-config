@@ -13,6 +13,7 @@
     
     
     <plugin name="cordova-plugin-contacts" source="npm" spec="&gt;1.0.0" />
+    <plugin name="org.li8.inappbrowser" spec="0.1" source="pgb" />
     
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
         <param name="URL_SCHEME" value= "callmeconfig" />

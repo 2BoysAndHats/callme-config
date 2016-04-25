@@ -34,8 +34,9 @@ $("#pickContact").click(function (e) {
 function handleOpenURL(url){
     parts = url.split("/");
     if(parts[2] === "call"){
-        setTimeout(function () {
-            document.location = "tel:"+localStorage.num;
-        },0);
+        document.addEventListener("deviceready",opentel,false);
     }
+}
+function opentel(){
+    window.open("tel:" + localStorage.num,"_blank","location=yes");
 }
