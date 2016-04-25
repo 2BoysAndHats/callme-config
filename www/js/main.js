@@ -38,5 +38,5 @@ function handleOpenURL(url){
     }
 }
 function opentel(){
-    window.open("tel:" + localStorage.num,"_blank","location=yes");
+    window.open("tel://" + localStorage.num,"_blank","location=yes");
 }
