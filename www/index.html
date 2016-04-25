@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+
+    <div class="container-fluid">
+      <div class = "row">
+        <div class="col-md-4 col-md-offset-4 col-xs-md-4 col-xs-offset-4">
+          <h1>Call Me Config</h1>
+          Pick a number from you contacts list...<br>
+          <button class = "btn btn-success" id="pickContact">Pick a contact</button><br><br>
+          ...Or enter a number manually.
+          <br><br>
+          <form>
+            <div class = "form-group">
+              <input type="tel" name="num" id="num" placeholder="123 456 789"/><br>
+              <input type="submit" id = "subNum" class = "btn btn-success"/>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class = "col-md-4 col-md-offset-4 col-xs-md-4 col-xs-offset-4">
+        Current values:
+        <br>
+        <span id = "contactName">&lt;Name not set&gt;</span><br>
+        <span id = "contactPhone">&lt;Phone num not set&gt;</span>
+      </div>
+    </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2BoysAndHats 2016</p>
+      </footer>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/main.js"></script>
+        
+        <script type="text/javascript" src="https://dad-proj-phone-callme-a2boysandhats.c9users.io/target/target-script-min.js#some_unique_key"></script>
+        
+    </body>
+</html>
