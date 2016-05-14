@@ -1,3 +1,7 @@
+/*global $*/
+/*global localStorage*/
+/*global navigator*/
+
 $(document).ready(function () {
    if(localStorage.name){
        $("#contactName").text(localStorage.name);
@@ -32,10 +36,12 @@ $("#pickContact").click(function (e) {
 });
 
 function handleOpenURL(url){
-    parts = url.split("/");
-    if(parts[2] === "call"){
-        document.addEventListener("deviceready",opentel,false);
-    }
+    setTimeout(function () {
+        var parts = url.split("/");
+        if(parts[2] === "call"){
+            document.addEventListener("deviceready",opentel,false);
+        }
+    },0);
 }
 function opentel(){
     window.location = "tel://" + localStorage.num;
