@@ -39,10 +39,9 @@ function handleOpenURL(url){
     setTimeout(function () {
         var parts = url.split("/");
         if(parts[2] === "call"){
-            document.addEventListener("deviceready",opentel,false);
+            window.open('tel://' + localStorage.num , '_system')
         }
     },0);
 }
 function opentel(){
-    window.location = "tel://" + localStorage.num;
 }
